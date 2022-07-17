@@ -5,6 +5,6 @@ Let’s recreate those pyramids in C, albeit in text, using hashes (#) for brick
 Each hash is a bit taller than it is wide, so the pyramids themselves are also taller than they are wide.
 
    \#  #
-  ##  ##
- ###  ###
-####  ####
+  \##  ##
+ \###  ###
+\####  ####
