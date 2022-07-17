@@ -18,14 +18,14 @@ int main(void)
         {
             espace();
         }
-        //number of bricks in each row
+        //bricks before espace
         for (int j = 0; j < counter+1; j++)
         {
             brick();
 
         }
         printf("  ");
-
+        //bricks after espace
         for (int k = 0; k <  counter + 1; k++)
             {
                 brick();
