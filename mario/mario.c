@@ -14,17 +14,25 @@ int main(void)
     //number of rows
     for (int counter = 0; counter < height; counter++)
     {
-        for (int i = 0; i < height - counter - 1; i++){
+        for (int i = 0; i < height - counter - 1; i++)
+        {
             espace();
         }
-        //number of bricks in wich row
+        //number of bricks in each row
         for (int j = 0; j < counter+1; j++)
         {
             brick();
 
         }
+        printf("  ");
+
+        for (int k = 0; k <  counter + 1; k++)
+            {
+                brick();
+            }
         printf("\n");
     }
+
 }
 
 int get_positive_int(void)
@@ -32,9 +40,9 @@ int get_positive_int(void)
     int n;
     do
     {
-        n = get_int("Choose a number from 1 to 8 to the height of your pyramid\n");
+        n = get_int("Choose a number from 1 to 8 to be the height of your pyramid\n");
     }
-    while(n < 1 || n > 8);   
+    while(n < 1 || n > 8);
     return n;
 }
 
