@@ -34,7 +34,7 @@ int get_positive_int(void)
     {
         n = get_int("Choose a number from 1 to 8 to the height of your pyramid\n");
     }
-    while(n < 1 || n > 8);
+    while(n < 1 || n > 8);   
     return n;
 }
 
