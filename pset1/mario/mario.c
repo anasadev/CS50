@@ -19,7 +19,7 @@ int main(void)
             espace();
         }
         //number of bricks in each row
-        for (int j = 0; j < counter+1; j++)
+        for (int j = 0; j < counter + 1; j++)
         {
             brick();
 
@@ -27,9 +27,9 @@ int main(void)
         printf("  ");
 
         for (int k = 0; k <  counter + 1; k++)
-            {
-                brick();
-            }
+        {
+            brick();
+        }
         printf("\n");
     }
 
@@ -42,15 +42,17 @@ int get_positive_int(void)
     {
         n = get_int("Choose a number from 1 to 8 to be the height of your pyramid\n");
     }
-    while(n < 1 || n > 8);
+    while (n < 1 || n > 8);
     return n;
 }
 
 
-void brick(void){
+void brick(void)
+{
     printf("#");
 }
 
-void espace(void){
+void espace(void)
+{
     printf(" ");
 }

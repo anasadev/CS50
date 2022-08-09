@@ -8,7 +8,7 @@ int main(void)
 {
     do
     {
-    card = get_long_long("Credit card number: ");
+        card = get_long_long("Credit card number: ");
     }
     while (card < 0);
 
@@ -28,7 +28,9 @@ int main(void)
             sum2 += ((j % 10) * 2) % 10;
         }
         else
-        sum2 += (j % 10) * 2;
+        {
+            sum2 += (j % 10) * 2;
+        }
     }
 
     checksum = sum1 + sum2;
@@ -39,7 +41,7 @@ int main(void)
         {
             printf("MASTERCARD\n");
         }
-        else if ((card >=4000000000000 && card < 5000000000000) || (card >=4000000000000000 && card < 5000000000000000))
+        else if ((card >= 4000000000000 && card < 5000000000000) || (card >= 4000000000000000 && card < 5000000000000000))
         {
             printf("VISA\n");
         }
@@ -54,7 +56,7 @@ int main(void)
     }
     else
     {
-        printf ("INVALID\n");
+        printf("INVALID\n");
     }
     return 0;
 }
